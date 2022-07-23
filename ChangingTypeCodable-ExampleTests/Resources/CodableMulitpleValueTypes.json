@@ -1,0 +1,13 @@
+{
+   "subModels":[
+      {
+         "name": "Int name",
+         "value": 123
+      },
+      {
+         "name": "Another Int name",
+         "value": 456
+      }
+   ]
+}
+

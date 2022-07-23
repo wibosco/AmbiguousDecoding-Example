@@ -1,0 +1,12 @@
+{
+   "subModels":[
+      {
+         "name": "String Array name",
+         "value": [
+             "AA",
+             "BB"
+         ]
+      }
+   ]
+}
+

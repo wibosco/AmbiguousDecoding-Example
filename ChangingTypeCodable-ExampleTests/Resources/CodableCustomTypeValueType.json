@@ -1,0 +1,12 @@
+{
+   "subModels":[
+      {
+         "name": "Custom Type name",
+         "value": {
+             "firstName": "Joe",
+             "lastName": "Bloggs"
+         }
+      }
+   ]
+}
+
