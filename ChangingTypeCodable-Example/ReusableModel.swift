@@ -7,21 +7,20 @@
 
 import Foundation
 
-struct Model: Codable, Equatable {
-    let subModels: [SubModel]
+struct ReusableModel: Codable, Equatable {
+    let subModels: [ReusableSubModel]
 }
 
-struct SubModel: Codable, Equatable {
+struct ReusableSubModel: Codable, Equatable {
     let name: String
-    let value: ChangingType
+    let value: ReusableValueType
 }
 
-enum ChangingType: Codable, Equatable {
+enum ReusableValueType: Codable, Equatable {
     case int(_ value: Int)
-    case string(_ value: String)
     case bool(_ value: Bool)
     case stringArray(_ value: [String])
-    case person(_ value: Person)
+    case user(_ value: User)
     
     // MARK: - Decode
     
@@ -30,14 +29,12 @@ enum ChangingType: Codable, Equatable {
         
         if let value = try? container.decode(Int.self) {
             self = .int(value)
-        } else if let value = try? container.decode(String.self) {
-            self = .string(value)
         } else if let value = try? container.decode(Bool.self) {
             self = .bool(value)
         } else if let value = try? container.decode([String].self) {
             self = .stringArray(value)
-        } else if let value = try? container.decode(Person.self) {
-            self = .person(value)
+        } else if let value = try? container.decode(User.self) {
+            self = .user(value)
         } else {
             fatalError("Unknown type encountered")
         }
@@ -51,19 +48,12 @@ enum ChangingType: Codable, Equatable {
         switch self {
         case .int(let value):
             try container.encode(value)
-        case .string(let value):
-            try container.encode(value)
         case .bool(let value):
             try container.encode(value)
         case .stringArray(let value):
             try container.encode(value)
-        case .person(let value):
+        case .user(let value):
             try container.encode(value)
         }
     }
-}
-
-struct Person: Codable, Equatable {
-    let firstName: String
-    let lastName: String
 }

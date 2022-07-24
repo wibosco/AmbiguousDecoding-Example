@@ -1,7 +1,7 @@
 {
    "subModels":[
       {
-         "name": "Custom Type name",
+         "name": "UserDetails",
          "value": {
              "firstName": "Joe",
              "lastName": "Bloggs"

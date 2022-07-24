@@ -1,11 +1,11 @@
 {
    "subModels":[
       {
-         "name": "Int name",
-         "value": 123
+         "name": "Access",
+         "value": true
       },
       {
-         "name": "Another Int name",
+         "name": "Code",
          "value": 456
       }
    ]

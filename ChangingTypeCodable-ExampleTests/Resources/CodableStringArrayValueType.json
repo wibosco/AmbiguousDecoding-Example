@@ -1,10 +1,10 @@
 {
    "subModels":[
       {
-         "name": "String Array name",
+         "name": "VerificationOptions",
          "value": [
-             "AA",
-             "BB"
+             "Email",
+             "SMS"
          ]
       }
    ]
