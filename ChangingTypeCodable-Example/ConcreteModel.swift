@@ -37,16 +37,16 @@ struct ConcreteSubModel: Codable, Equatable {
         
         if name == "Code" {
             let code = try container.decode(Int.self, forKey: .value)
-            value = .code(code)
+            value = .code(value: code)
         } else if name == "Access" {
             let access = try container.decode(Bool.self, forKey: .value)
             value = access ? .granted : .denied
         } else if name == "VerificationOptions" {
             let options = try container.decode([String].self, forKey: .value)
-            value = .verificationOptions(options)
+            value = .verificationOptions(value: options)
         } else if name == "UserDetails" {
             let user = try container.decode(User.self, forKey: .value)
-            value = .userDetails(user)
+            value = .userDetails(value: user)
         } else {
             fatalError("Unexpected type encountered")
         }
@@ -75,9 +75,9 @@ struct ConcreteSubModel: Codable, Equatable {
 }
 
 enum ConcreteValueType: Codable, Equatable {
-    case code(_ value: Int)
+    case code(value: Int)
     case granted
     case denied
-    case verificationOptions(_ value: [String])
-    case userDetails(_ value: User)
+    case verificationOptions(value: [String])
+    case userDetails(value: User)
 }

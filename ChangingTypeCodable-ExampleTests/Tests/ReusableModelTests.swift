@@ -21,7 +21,7 @@ class ReusableModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 1)
         
         XCTAssertEqual(model.subModels[0].name, "Code")
-        XCTAssertEqual(model.subModels[0].value, .int(12))
+        XCTAssertEqual(model.subModels[0].value, .int(value: 12))
     }
     
     func test_decode_boolValueType() throws {
@@ -31,7 +31,7 @@ class ReusableModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 1)
         
         XCTAssertEqual(model.subModels[0].name, "Access")
-        XCTAssertEqual(model.subModels[0].value, .bool(false))
+        XCTAssertEqual(model.subModels[0].value, .bool(value: false))
     }
     
     func test_decode_stringArrayValueType() throws {
@@ -41,7 +41,7 @@ class ReusableModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 1)
         
         XCTAssertEqual(model.subModels[0].name, "VerificationOptions")
-        XCTAssertEqual(model.subModels[0].value, .stringArray(["Email", "SMS"]))
+        XCTAssertEqual(model.subModels[0].value, .stringArray(value: ["Email", "SMS"]))
     }
     
     func test_decode_customTypeValueType() throws {
@@ -51,7 +51,7 @@ class ReusableModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 1)
         
         XCTAssertEqual(model.subModels[0].name, "UserDetails")
-        XCTAssertEqual(model.subModels[0].value, .user(User(firstName: "Joe", lastName: "Bloggs")))
+        XCTAssertEqual(model.subModels[0].value, .user(value: User(firstName: "Joe", lastName: "Bloggs")))
     }
     
     func test_decode_multipleValueType() throws {
@@ -61,16 +61,16 @@ class ReusableModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 2)
         
         XCTAssertEqual(model.subModels[0].name, "Access")
-        XCTAssertEqual(model.subModels[0].value, .bool(true))
+        XCTAssertEqual(model.subModels[0].value, .bool(value: true))
         
         XCTAssertEqual(model.subModels[1].name, "Code")
-        XCTAssertEqual(model.subModels[1].value, .int(456))
+        XCTAssertEqual(model.subModels[1].value, .int(value: 456))
     }
     
     // MARK: Encode
     
     func test_encode_intValueType() throws {
-        let subModel = ReusableSubModel(name: "Int name", value: .int(123))
+        let subModel = ReusableSubModel(name: "Int name", value: .int(value: 123))
         
         let model = ReusableModel(subModels: [subModel])
         
@@ -81,7 +81,7 @@ class ReusableModelTests: XCTestCase {
     }
     
     func test_encode_boolValueType() throws {
-        let subModel = ReusableSubModel(name: "Bool name", value: .bool(true))
+        let subModel = ReusableSubModel(name: "Bool name", value: .bool(value: true))
         
         let model = ReusableModel(subModels: [subModel])
         
@@ -92,7 +92,7 @@ class ReusableModelTests: XCTestCase {
     }
     
     func test_encode_stringArrayValueType() throws {
-        let subModel = ReusableSubModel(name: "String Array name", value: .stringArray(["AA", "BB"]))
+        let subModel = ReusableSubModel(name: "String Array name", value: .stringArray(value: ["AA", "BB"]))
         
         let model = ReusableModel(subModels: [subModel])
         
@@ -104,7 +104,7 @@ class ReusableModelTests: XCTestCase {
     
     func test_encode_customTypeValueType() throws {
         let user = User(firstName: "Joe", lastName: "Bloggs")
-        let subModel = ReusableSubModel(name: "Custom Type name", value: .user(user))
+        let subModel = ReusableSubModel(name: "Custom Type name", value: .user(value: user))
         
         let model = ReusableModel(subModels: [subModel])
         
@@ -115,8 +115,8 @@ class ReusableModelTests: XCTestCase {
     }
     
     func test_encode_multipleValueTypes() throws {
-        let intSubModel = ReusableSubModel(name: "Int name", value: .int(123))
-        let boolSubModel = ReusableSubModel(name: "Bool name", value: .bool(false))
+        let intSubModel = ReusableSubModel(name: "Int name", value: .int(value: 123))
+        let boolSubModel = ReusableSubModel(name: "Bool name", value: .bool(value: false))
         
         let model = ReusableModel(subModels: [intSubModel, boolSubModel])
         

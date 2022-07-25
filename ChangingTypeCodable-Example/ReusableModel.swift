@@ -17,10 +17,10 @@ struct ReusableSubModel: Codable, Equatable {
 }
 
 enum ReusableValueType: Codable, Equatable {
-    case int(_ value: Int)
-    case bool(_ value: Bool)
-    case stringArray(_ value: [String])
-    case user(_ value: User)
+    case int(value: Int)
+    case bool(value: Bool)
+    case stringArray(value: [String])
+    case user(value: User)
     
     // MARK: - Decode
     
@@ -28,13 +28,13 @@ enum ReusableValueType: Codable, Equatable {
         let container = try decoder.singleValueContainer()
         
         if let value = try? container.decode(Int.self) {
-            self = .int(value)
+            self = .int(value: value)
         } else if let value = try? container.decode(Bool.self) {
-            self = .bool(value)
+            self = .bool(value: value)
         } else if let value = try? container.decode([String].self) {
-            self = .stringArray(value)
+            self = .stringArray(value: value)
         } else if let value = try? container.decode(User.self) {
-            self = .user(value)
+            self = .user(value: value)
         } else {
             fatalError("Unknown type encountered")
         }

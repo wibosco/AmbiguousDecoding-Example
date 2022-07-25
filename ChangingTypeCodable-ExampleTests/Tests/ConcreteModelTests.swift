@@ -23,7 +23,7 @@ class ConcreteModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 1)
         
         XCTAssertEqual(model.subModels[0].name, "Code")
-        XCTAssertEqual(model.subModels[0].value, .code(12))
+        XCTAssertEqual(model.subModels[0].value, .code(value: 12))
     }
     
     func test_decode_grantedValueType() throws {
@@ -43,7 +43,7 @@ class ConcreteModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 1)
         
         XCTAssertEqual(model.subModels[0].name, "VerificationOptions")
-        XCTAssertEqual(model.subModels[0].value, .verificationOptions(["Email", "SMS"]))
+        XCTAssertEqual(model.subModels[0].value, .verificationOptions(value: ["Email", "SMS"]))
     }
     
     func test_decode_userDetailsValueType() throws {
@@ -53,7 +53,7 @@ class ConcreteModelTests: XCTestCase {
         XCTAssertEqual(model.subModels.count, 1)
         
         XCTAssertEqual(model.subModels[0].name, "UserDetails")
-        XCTAssertEqual(model.subModels[0].value, .userDetails(User(firstName: "Joe", lastName: "Bloggs")))
+        XCTAssertEqual(model.subModels[0].value, .userDetails(value: User(firstName: "Joe", lastName: "Bloggs")))
     }
     
     func test_decode_multipleValueType() throws {
@@ -66,13 +66,13 @@ class ConcreteModelTests: XCTestCase {
         XCTAssertEqual(model.subModels[0].value, .granted)
         
         XCTAssertEqual(model.subModels[1].name, "Code")
-        XCTAssertEqual(model.subModels[1].value, .code(456))
+        XCTAssertEqual(model.subModels[1].value, .code(value: 456))
     }
     
     // MARK: Encode
     
     func test_encode_codeValueType() throws {
-        let subModel = ConcreteSubModel(name: "Code", value: .code(456))
+        let subModel = ConcreteSubModel(name: "Code", value: .code(value: 456))
         
         let model = ConcreteModel(subModels: [subModel])
         
@@ -105,7 +105,7 @@ class ConcreteModelTests: XCTestCase {
     }
     
     func test_encode_verificationOptionsValueType() throws {
-        let subModel = ConcreteSubModel(name: "VerificationOptions", value: .verificationOptions(["Email", "SMS"]))
+        let subModel = ConcreteSubModel(name: "VerificationOptions", value: .verificationOptions(value: ["Email", "SMS"]))
         
         let model = ConcreteModel(subModels: [subModel])
         
@@ -117,7 +117,7 @@ class ConcreteModelTests: XCTestCase {
     
     func test_encode_userDetailsValueType() throws {
         let user = User(firstName: "Joe", lastName: "Bloggs")
-        let subModel = ConcreteSubModel(name: "UserDetails", value: .userDetails(user))
+        let subModel = ConcreteSubModel(name: "UserDetails", value: .userDetails(value: user))
         
         let model = ConcreteModel(subModels: [subModel])
         
@@ -128,7 +128,7 @@ class ConcreteModelTests: XCTestCase {
     }
     
     func test_encode_multipleValueTypes() throws {
-        let codeSubModel = ConcreteSubModel(name: "Code", value: .code(456))
+        let codeSubModel = ConcreteSubModel(name: "Code", value: .code(value: 456))
         let accessSubModel = ConcreteSubModel(name: "Access", value: .granted)
         
         let model = ConcreteModel(subModels: [codeSubModel, accessSubModel])
