@@ -10,14 +10,6 @@
          "url":"https://en.wikipedia.org/wiki/The_Hobbit"
       },
       {
-         "item_type":"book",
-         "id":1021,
-         "title":"The Lord of the Rings",
-         "author":"J. R. R. Tolkien",
-         "published_year":1954,
-         "url":"https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
-      },
-      {
          "item_type":"movie",
          "id":2785,
          "title":"The Lord of the Rings: The Fellowship of the Ring",

@@ -1,0 +1,20 @@
+{
+   "items":[
+      {
+         "name":"first",
+         "value":"value of first item"
+      },
+      {
+         "name":"second",
+         "value":123
+      },
+      {
+         "name":"third",
+         "value":[
+            "a",
+            "b",
+            "c"
+         ]
+      }
+   ]
+}
