@@ -7,18 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D68FEB3288DDFA80001B324 /* ConcreteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68FEB2288DDFA80001B324 /* ConcreteModel.swift */; };
-		3D68FEB5288DE4A20001B324 /* ConcreteModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68FEB4288DE4A20001B324 /* ConcreteModelTests.swift */; };
-		3D68FEB7288DEBE50001B324 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68FEB6288DEBE50001B324 /* User.swift */; };
+		3D0182B02974CA6D00C95AEB /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0182AF2974CA6D00C95AEB /* Content.swift */; };
+		3D68FEB5288DE4A20001B324 /* ContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68FEB4288DE4A20001B324 /* ContentTests.swift */; };
 		3DB2E19A288C833800FFFF0F /* ChangingTypeCodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB2E191288C833800FFFF0F /* ChangingTypeCodable_Example.framework */; };
-		3DB2E1AA288C835B00FFFF0F /* ReusableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2E1A9288C835B00FFFF0F /* ReusableModel.swift */; };
-		3DB2E1B0288C85EF00FFFF0F /* ReusableModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2E1AF288C85EF00FFFF0F /* ReusableModelTests.swift */; };
-		3DEA0D61288C955B0092E512 /* CodableIntValueType.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D60288C955B0092E512 /* CodableIntValueType.json */; };
 		3DEA0D64288C95C20092E512 /* Bundle+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA0D63288C95C20092E512 /* Bundle+Load.swift */; };
-		3DEA0D6A288C971C0092E512 /* CodableBoolValueType.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D66288C971C0092E512 /* CodableBoolValueType.json */; };
-		3DEA0D6B288C971C0092E512 /* CodableCustomTypeValueType.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D67288C971C0092E512 /* CodableCustomTypeValueType.json */; };
-		3DEA0D6C288C971C0092E512 /* CodableStringArrayValueType.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D68288C971C0092E512 /* CodableStringArrayValueType.json */; };
-		3DEA0D6E288C9C0E0092E512 /* CodableMulitpleValueTypes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D6D288C9C0E0092E512 /* CodableMulitpleValueTypes.json */; };
+		3DEA0D6A288C971C0092E512 /* MiddleEarth.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D66288C971C0092E512 /* MiddleEarth.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,19 +25,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D68FEB2288DDFA80001B324 /* ConcreteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteModel.swift; sourceTree = "<group>"; };
-		3D68FEB4288DE4A20001B324 /* ConcreteModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteModelTests.swift; sourceTree = "<group>"; };
-		3D68FEB6288DEBE50001B324 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3D0182AF2974CA6D00C95AEB /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		3D68FEB4288DE4A20001B324 /* ContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
 		3DB2E191288C833800FFFF0F /* ChangingTypeCodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChangingTypeCodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB2E199288C833800FFFF0F /* ChangingTypeCodable-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChangingTypeCodable-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DB2E1A9288C835B00FFFF0F /* ReusableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableModel.swift; sourceTree = "<group>"; };
-		3DB2E1AF288C85EF00FFFF0F /* ReusableModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableModelTests.swift; sourceTree = "<group>"; };
-		3DEA0D60288C955B0092E512 /* CodableIntValueType.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CodableIntValueType.json; sourceTree = "<group>"; };
 		3DEA0D63288C95C20092E512 /* Bundle+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Load.swift"; sourceTree = "<group>"; };
-		3DEA0D66288C971C0092E512 /* CodableBoolValueType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CodableBoolValueType.json; sourceTree = "<group>"; };
-		3DEA0D67288C971C0092E512 /* CodableCustomTypeValueType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CodableCustomTypeValueType.json; sourceTree = "<group>"; };
-		3DEA0D68288C971C0092E512 /* CodableStringArrayValueType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CodableStringArrayValueType.json; sourceTree = "<group>"; };
-		3DEA0D6D288C9C0E0092E512 /* CodableMulitpleValueTypes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CodableMulitpleValueTypes.json; sourceTree = "<group>"; };
+		3DEA0D66288C971C0092E512 /* MiddleEarth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MiddleEarth.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +73,7 @@
 		3DB2E193288C833800FFFF0F /* ChangingTypeCodable-Example */ = {
 			isa = PBXGroup;
 			children = (
-				3D68FEB2288DDFA80001B324 /* ConcreteModel.swift */,
-				3DB2E1A9288C835B00FFFF0F /* ReusableModel.swift */,
-				3D68FEB6288DEBE50001B324 /* User.swift */,
+				3D0182AF2974CA6D00C95AEB /* Content.swift */,
 			);
 			path = "ChangingTypeCodable-Example";
 			sourceTree = "<group>";
@@ -107,11 +91,7 @@
 		3DB2E1AD288C85EF00FFFF0F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3DEA0D66288C971C0092E512 /* CodableBoolValueType.json */,
-				3DEA0D67288C971C0092E512 /* CodableCustomTypeValueType.json */,
-				3DEA0D60288C955B0092E512 /* CodableIntValueType.json */,
-				3DEA0D6D288C9C0E0092E512 /* CodableMulitpleValueTypes.json */,
-				3DEA0D68288C971C0092E512 /* CodableStringArrayValueType.json */,
+				3DEA0D66288C971C0092E512 /* MiddleEarth.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -119,8 +99,7 @@
 		3DB2E1AE288C85EF00FFFF0F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3D68FEB4288DE4A20001B324 /* ConcreteModelTests.swift */,
-				3DB2E1AF288C85EF00FFFF0F /* ReusableModelTests.swift */,
+				3D68FEB4288DE4A20001B324 /* ContentTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -190,7 +169,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = Boles;
 				TargetAttributes = {
 					3DB2E190288C833800FFFF0F = {
@@ -233,11 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DEA0D61288C955B0092E512 /* CodableIntValueType.json in Resources */,
-				3DEA0D6E288C9C0E0092E512 /* CodableMulitpleValueTypes.json in Resources */,
-				3DEA0D6C288C971C0092E512 /* CodableStringArrayValueType.json in Resources */,
-				3DEA0D6A288C971C0092E512 /* CodableBoolValueType.json in Resources */,
-				3DEA0D6B288C971C0092E512 /* CodableCustomTypeValueType.json in Resources */,
+				3DEA0D6A288C971C0092E512 /* MiddleEarth.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D68FEB3288DDFA80001B324 /* ConcreteModel.swift in Sources */,
-				3DB2E1AA288C835B00FFFF0F /* ReusableModel.swift in Sources */,
-				3D68FEB7288DEBE50001B324 /* User.swift in Sources */,
+				3D0182B02974CA6D00C95AEB /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D68FEB5288DE4A20001B324 /* ConcreteModelTests.swift in Sources */,
-				3DB2E1B0288C85EF00FFFF0F /* ReusableModelTests.swift in Sources */,
+				3D68FEB5288DE4A20001B324 /* ContentTests.swift in Sources */,
 				3DEA0D64288C95C20092E512 /* Bundle+Load.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -432,7 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
