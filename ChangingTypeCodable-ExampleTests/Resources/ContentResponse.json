@@ -1,8 +1,7 @@
 {
-   "title":"Middle Earth",
-   "items":[
+   "media":[
       {
-         "item_type":"book",
+         "media_type":"book",
          "id":12,
          "title":"The Hobbit",
          "author":"J. R. R. Tolkien",
@@ -10,14 +9,14 @@
          "url":"https://en.wikipedia.org/wiki/The_Hobbit"
       },
       {
-         "item_type":"movie",
+         "media_type":"movie",
          "id":2785,
          "title":"The Lord of the Rings: The Fellowship of the Ring",
          "director":"Peter Jackson",
          "url":"https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring"
       },
       {
-         "item_type":"television_series",
+         "media_type":"television_series",
          "id":29890,
          "title":"The Lord of the Rings: The Rings of Power",
          "total_seasons":1,

@@ -1,5 +1,5 @@
 //
-//  DifferentStructure.swift
+//  Content.swift
 //  ChangingTypeCodable-Example
 //
 //  Created by William Boles on 15/01/2023.
@@ -8,27 +8,26 @@
 
 import Foundation
 
-struct DifferentStructure: Decodable {
-    let title: String
-    let items: [Item]
+struct Content: Decodable {
+    let media: [Media]
 }
 
-enum Item: Decodable, Equatable {
+enum Media: Decodable, Equatable {
     case book(Book)
     case movie(Movie)
     case televisionSeries(TelevisionSeries)
     
     enum CodingKeys: String, CodingKey {
-        case itemType = "item_type"
+        case mediaType = "media_type"
     }
     
     // MARK: - Init
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let itemType = try container.decode(String.self, forKey: .itemType)
+        let type = try container.decode(String.self, forKey: .mediaType)
         
-        switch itemType {
+        switch type {
         case "book":
             let book = try Book(from: decoder)
             self = .book(book)

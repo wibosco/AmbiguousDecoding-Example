@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct DifferentType: Decodable {
-    let items: [DifferentTypeItem]
+struct Items: Decodable {
+    let items: [Item]
 }
 
-struct DifferentTypeItem: Decodable {
+struct Item: Decodable {
     let name: String
     let value: ValueType
 }
