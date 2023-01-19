@@ -30,41 +30,25 @@ final class ContentTests: XCTestCase {
     func test_decode_mediaArray() throws {
         let content = try JSONDecoder().decode(Content.self, from: data)
         
-        XCTAssertEqual(content.media.count, 3)
+        XCTAssertEqual(content.media.count, 2)
     }
     
-    func test_decode_book() throws {
+    func test_decode_text() throws {
         let content = try JSONDecoder().decode(Content.self, from: data)
         
-        let book = Book(id: 12,
-                        title: "The Hobbit",
-                        author: "J. R. R. Tolkien",
-                        publishedYear: 1937,
-                        url: URL(string: "https://en.wikipedia.org/wiki/The_Hobbit")!)
+        let text = Text(id: 12,
+                        text: "This is an example of text media")
         
-        XCTAssertEqual(content.media[0], .book(book))
+        XCTAssertEqual(content.media[0], .text(text))
     }
     
-    func test_decode_movie() throws {
+    func test_decode_image() throws {
         let content = try JSONDecoder().decode(Content.self, from: data)
         
-        let movie = Movie(id: 2785,
-                          title: "The Lord of the Rings: The Fellowship of the Ring",
-                          director: "Peter Jackson",
-                          url: URL(string: "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring")!)
+        let image = Image(id: 2785,
+                          caption: "An example caption associated with image media",
+                          url: URL(string: "https://example.com/images/2785.jpg")!)
         
-        XCTAssertEqual(content.media[1], .movie(movie))
-    }
-    
-    func test_decode_televisionSeries() throws {
-        let content = try JSONDecoder().decode(Content.self, from: data)
-        
-        let televsionSeries = TelevisionSeries(id: 29890,
-                                               title: "The Lord of the Rings: The Rings of Power",
-                                               totalSeasons: 1,
-                                               totalEpisodes: 8,
-                                               url: URL(string: "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Rings_of_Power")!)
-        
-        XCTAssertEqual(content.media[2], .televisionSeries(televsionSeries))
+        XCTAssertEqual(content.media[1], .image(image))
     }
 }

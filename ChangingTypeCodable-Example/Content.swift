@@ -13,9 +13,8 @@ struct Content: Decodable {
 }
 
 enum Media: Decodable, Equatable {
-    case book(Book)
-    case movie(Movie)
-    case televisionSeries(TelevisionSeries)
+    case text(Text)
+    case image(Image)
     
     enum CodingKeys: String, CodingKey {
         case mediaType = "media_type"
@@ -28,56 +27,25 @@ enum Media: Decodable, Equatable {
         let type = try container.decode(String.self, forKey: .mediaType)
         
         switch type {
-        case "book":
-            let book = try Book(from: decoder)
-            self = .book(book)
-        case "movie":
-            let movie = try Movie(from: decoder)
-            self = .movie(movie)
-        case "television_series":
-            let televisionSeries = try TelevisionSeries(from: decoder)
-            self = .televisionSeries(televisionSeries)
+        case "text":
+            let text = try Text(from: decoder)
+            self = .text(text)
+        case "image":
+            let image = try Image(from: decoder)
+            self = .image(image)
         default:
             fatalError("Unexpected media type encountered")
         }
     }
 }
 
-struct Book: Decodable, Equatable {
+struct Text: Decodable, Equatable {
     let id: Int
-    let title: String
-    let author: String
-    let publishedYear: Int
-    let url: URL
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case title
-        case author
-        case publishedYear = "published_year"
-        case url
-    }
+    let text: String
 }
 
-struct Movie: Decodable, Equatable {
+struct Image: Decodable, Equatable {
     let id: Int
-    let title: String
-    let director: String
+    let caption: String
     let url: URL
-}
-
-struct TelevisionSeries: Decodable, Equatable {
-    let id: Int
-    let title: String
-    let totalSeasons: Int
-    let totalEpisodes: Int
-    let url: URL
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case title
-        case totalSeasons = "total_seasons"
-        case totalEpisodes = "total_episodes"
-        case url
-    }
 }

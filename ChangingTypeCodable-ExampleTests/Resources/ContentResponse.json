@@ -1,27 +1,15 @@
 {
    "media":[
       {
-         "media_type":"book",
+         "media_type":"text",
          "id":12,
-         "title":"The Hobbit",
-         "author":"J. R. R. Tolkien",
-         "published_year":1937,
-         "url":"https://en.wikipedia.org/wiki/The_Hobbit"
+         "text":"This is an example of text media"
       },
       {
-         "media_type":"movie",
+         "media_type":"image",
          "id":2785,
-         "title":"The Lord of the Rings: The Fellowship of the Ring",
-         "director":"Peter Jackson",
-         "url":"https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring"
-      },
-      {
-         "media_type":"television_series",
-         "id":29890,
-         "title":"The Lord of the Rings: The Rings of Power",
-         "total_seasons":1,
-         "total_episodes":8,
-         "url":"https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Rings_of_Power"
+         "caption":"An example caption associated with image media",
+         "url":"https://example.com/images/2785.jpg"
       }
    ]
 }
