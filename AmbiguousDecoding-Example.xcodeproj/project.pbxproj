@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D0182B02974CA6D00C95AEB /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0182AF2974CA6D00C95AEB /* Content.swift */; };
 		3D68FEB5288DE4A20001B324 /* ContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D68FEB4288DE4A20001B324 /* ContentTests.swift */; };
-		3DA06ADE2976E54B009EE982 /* ItemsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DA06ADD2976E54B009EE982 /* ItemsResponse.json */; };
 		3DB2E19A288C833800FFFF0F /* AmbiguousDecoding_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB2E191288C833800FFFF0F /* AmbiguousDecoding_Example.framework */; };
-		3DC34584297862E50064F867 /* PersonResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DC34583297862E50064F867 /* PersonResponse.json */; };
 		3DEA0D64288C95C20092E512 /* Bundle+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA0D63288C95C20092E512 /* Bundle+Load.swift */; };
 		3DEA0D6A288C971C0092E512 /* ContentResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D66288C971C0092E512 /* ContentResponse.json */; };
 /* End PBXBuildFile section */
@@ -29,10 +27,8 @@
 /* Begin PBXFileReference section */
 		3D0182AF2974CA6D00C95AEB /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		3D68FEB4288DE4A20001B324 /* ContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
-		3DA06ADD2976E54B009EE982 /* ItemsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsResponse.json; sourceTree = "<group>"; };
 		3DB2E191288C833800FFFF0F /* AmbiguousDecoding_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmbiguousDecoding_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB2E199288C833800FFFF0F /* AmbiguousDecoding-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AmbiguousDecoding-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DC34583297862E50064F867 /* PersonResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonResponse.json; sourceTree = "<group>"; };
 		3DEA0D63288C95C20092E512 /* Bundle+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Load.swift"; sourceTree = "<group>"; };
 		3DEA0D66288C971C0092E512 /* ContentResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ContentResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +91,6 @@
 		3DB2E1AD288C85EF00FFFF0F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3DC34583297862E50064F867 /* PersonResponse.json */,
-				3DA06ADD2976E54B009EE982 /* ItemsResponse.json */,
 				3DEA0D66288C971C0092E512 /* ContentResponse.json */,
 			);
 			path = Resources;
@@ -219,8 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEA0D6A288C971C0092E512 /* ContentResponse.json in Resources */,
-				3DC34584297862E50064F867 /* PersonResponse.json in Resources */,
-				3DA06ADE2976E54B009EE982 /* ItemsResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
