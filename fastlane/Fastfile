@@ -19,7 +19,7 @@ platform :ios do
   desc "Runs unit tests"
   lane :run_unit_tests do
     run_tests(
-      scheme: "ChangingTypeCodable-Example",
+      scheme: "AmbiguousDecoding-Example",
       skip_build: true
     )
   end

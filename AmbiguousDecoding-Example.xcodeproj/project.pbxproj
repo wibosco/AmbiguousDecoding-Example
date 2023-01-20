@@ -14,7 +14,7 @@
 		3DA06ADC2976E50D009EE982 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA06ADB2976E50D009EE982 /* Items.swift */; };
 		3DA06ADE2976E54B009EE982 /* ItemsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DA06ADD2976E54B009EE982 /* ItemsResponse.json */; };
 		3DA06AE02976E6AD009EE982 /* ItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA06ADF2976E6AD009EE982 /* ItemsTests.swift */; };
-		3DB2E19A288C833800FFFF0F /* ChangingTypeCodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB2E191288C833800FFFF0F /* ChangingTypeCodable_Example.framework */; };
+		3DB2E19A288C833800FFFF0F /* AmbiguousDecoding_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB2E191288C833800FFFF0F /* AmbiguousDecoding_Example.framework */; };
 		3DC34584297862E50064F867 /* PersonResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DC34583297862E50064F867 /* PersonResponse.json */; };
 		3DEA0D64288C95C20092E512 /* Bundle+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA0D63288C95C20092E512 /* Bundle+Load.swift */; };
 		3DEA0D6A288C971C0092E512 /* ContentResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA0D66288C971C0092E512 /* ContentResponse.json */; };
@@ -38,8 +38,8 @@
 		3DA06ADB2976E50D009EE982 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		3DA06ADD2976E54B009EE982 /* ItemsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsResponse.json; sourceTree = "<group>"; };
 		3DA06ADF2976E6AD009EE982 /* ItemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTests.swift; sourceTree = "<group>"; };
-		3DB2E191288C833800FFFF0F /* ChangingTypeCodable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChangingTypeCodable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DB2E199288C833800FFFF0F /* ChangingTypeCodable-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChangingTypeCodable-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB2E191288C833800FFFF0F /* AmbiguousDecoding_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmbiguousDecoding_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB2E199288C833800FFFF0F /* AmbiguousDecoding-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AmbiguousDecoding-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC34583297862E50064F867 /* PersonResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonResponse.json; sourceTree = "<group>"; };
 		3DEA0D63288C95C20092E512 /* Bundle+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Load.swift"; sourceTree = "<group>"; };
 		3DEA0D66288C971C0092E512 /* ContentResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ContentResponse.json; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB2E19A288C833800FFFF0F /* ChangingTypeCodable_Example.framework in Frameworks */,
+				3DB2E19A288C833800FFFF0F /* AmbiguousDecoding_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +67,8 @@
 		3DB2E187288C833800FFFF0F = {
 			isa = PBXGroup;
 			children = (
-				3DB2E193288C833800FFFF0F /* ChangingTypeCodable-Example */,
-				3DB2E19D288C833800FFFF0F /* ChangingTypeCodable-ExampleTests */,
+				3DB2E193288C833800FFFF0F /* AmbiguousDecoding-Example */,
+				3DB2E19D288C833800FFFF0F /* AmbiguousDecoding-ExampleTests */,
 				3DB2E192288C833800FFFF0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,30 +76,30 @@
 		3DB2E192288C833800FFFF0F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DB2E191288C833800FFFF0F /* ChangingTypeCodable_Example.framework */,
-				3DB2E199288C833800FFFF0F /* ChangingTypeCodable-ExampleTests.xctest */,
+				3DB2E191288C833800FFFF0F /* AmbiguousDecoding_Example.framework */,
+				3DB2E199288C833800FFFF0F /* AmbiguousDecoding-ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3DB2E193288C833800FFFF0F /* ChangingTypeCodable-Example */ = {
+		3DB2E193288C833800FFFF0F /* AmbiguousDecoding-Example */ = {
 			isa = PBXGroup;
 			children = (
 				3D3CC1EA297863BE004DEAE2 /* Person.swift */,
 				3D0182AF2974CA6D00C95AEB /* Content.swift */,
 				3DA06ADB2976E50D009EE982 /* Items.swift */,
 			);
-			path = "ChangingTypeCodable-Example";
+			path = "AmbiguousDecoding-Example";
 			sourceTree = "<group>";
 		};
-		3DB2E19D288C833800FFFF0F /* ChangingTypeCodable-ExampleTests */ = {
+		3DB2E19D288C833800FFFF0F /* AmbiguousDecoding-ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
 				3DEA0D62288C95A40092E512 /* Helpers */,
 				3DB2E1AD288C85EF00FFFF0F /* Resources */,
 				3DB2E1AE288C85EF00FFFF0F /* Tests */,
 			);
-			path = "ChangingTypeCodable-ExampleTests";
+			path = "AmbiguousDecoding-ExampleTests";
 			sourceTree = "<group>";
 		};
 		3DB2E1AD288C85EF00FFFF0F /* Resources */ = {
@@ -143,9 +143,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3DB2E190288C833800FFFF0F /* ChangingTypeCodable-Example */ = {
+		3DB2E190288C833800FFFF0F /* AmbiguousDecoding-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DB2E1A3288C833900FFFF0F /* Build configuration list for PBXNativeTarget "ChangingTypeCodable-Example" */;
+			buildConfigurationList = 3DB2E1A3288C833900FFFF0F /* Build configuration list for PBXNativeTarget "AmbiguousDecoding-Example" */;
 			buildPhases = (
 				3DB2E18C288C833800FFFF0F /* Headers */,
 				3DB2E18D288C833800FFFF0F /* Sources */,
@@ -156,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = "ChangingTypeCodable-Example";
+			name = "AmbiguousDecoding-Example";
 			productName = "ChangingTypeCodable-Example";
-			productReference = 3DB2E191288C833800FFFF0F /* ChangingTypeCodable_Example.framework */;
+			productReference = 3DB2E191288C833800FFFF0F /* AmbiguousDecoding_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3DB2E198288C833800FFFF0F /* ChangingTypeCodable-ExampleTests */ = {
+		3DB2E198288C833800FFFF0F /* AmbiguousDecoding-ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DB2E1A6288C833900FFFF0F /* Build configuration list for PBXNativeTarget "ChangingTypeCodable-ExampleTests" */;
+			buildConfigurationList = 3DB2E1A6288C833900FFFF0F /* Build configuration list for PBXNativeTarget "AmbiguousDecoding-ExampleTests" */;
 			buildPhases = (
 				3DB2E195288C833800FFFF0F /* Sources */,
 				3DB2E196288C833800FFFF0F /* Frameworks */,
@@ -174,9 +174,9 @@
 			dependencies = (
 				3DB2E19C288C833800FFFF0F /* PBXTargetDependency */,
 			);
-			name = "ChangingTypeCodable-ExampleTests";
+			name = "AmbiguousDecoding-ExampleTests";
 			productName = "ChangingTypeCodable-ExampleTests";
-			productReference = 3DB2E199288C833800FFFF0F /* ChangingTypeCodable-ExampleTests.xctest */;
+			productReference = 3DB2E199288C833800FFFF0F /* AmbiguousDecoding-ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3DB2E18B288C833800FFFF0F /* Build configuration list for PBXProject "ChangingTypeCodable-Example" */;
+			buildConfigurationList = 3DB2E18B288C833800FFFF0F /* Build configuration list for PBXProject "AmbiguousDecoding-Example" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,8 +212,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3DB2E190288C833800FFFF0F /* ChangingTypeCodable-Example */,
-				3DB2E198288C833800FFFF0F /* ChangingTypeCodable-ExampleTests */,
+				3DB2E190288C833800FFFF0F /* AmbiguousDecoding-Example */,
+				3DB2E198288C833800FFFF0F /* AmbiguousDecoding-ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +265,7 @@
 /* Begin PBXTargetDependency section */
 		3DB2E19C288C833800FFFF0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3DB2E190288C833800FFFF0F /* ChangingTypeCodable-Example */;
+			target = 3DB2E190288C833800FFFF0F /* AmbiguousDecoding-Example */;
 			targetProxy = 3DB2E19B288C833800FFFF0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -412,7 +412,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ChangingTypeCodable-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.AmbiguousDecoding-Example";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -445,7 +445,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ChangingTypeCodable-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.AmbiguousDecoding-Example";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -464,7 +464,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ChangingTypeCodable-ExampleTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.AmbiguousDecoding-ExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -482,7 +482,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.ChangingTypeCodable-ExampleTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.williamboles.AmbiguousDecoding-ExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -495,7 +495,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3DB2E18B288C833800FFFF0F /* Build configuration list for PBXProject "ChangingTypeCodable-Example" */ = {
+		3DB2E18B288C833800FFFF0F /* Build configuration list for PBXProject "AmbiguousDecoding-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DB2E1A1288C833800FFFF0F /* Debug */,
@@ -504,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DB2E1A3288C833900FFFF0F /* Build configuration list for PBXNativeTarget "ChangingTypeCodable-Example" */ = {
+		3DB2E1A3288C833900FFFF0F /* Build configuration list for PBXNativeTarget "AmbiguousDecoding-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DB2E1A4288C833900FFFF0F /* Debug */,
@@ -513,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DB2E1A6288C833900FFFF0F /* Build configuration list for PBXNativeTarget "ChangingTypeCodable-ExampleTests" */ = {
+		3DB2E1A6288C833900FFFF0F /* Build configuration list for PBXNativeTarget "AmbiguousDecoding-ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DB2E1A7288C833900FFFF0F /* Debug */,

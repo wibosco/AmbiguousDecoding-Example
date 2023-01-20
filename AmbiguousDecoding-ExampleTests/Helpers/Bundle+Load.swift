@@ -1,6 +1,6 @@
 //
 //  Bundle+Load.swift
-//  ChangingTypeCodable-ExampleTests
+//  AmbiguousDecoding-ExampleTests
 //
 //  Created by William Boles on 23/07/2022.
 //

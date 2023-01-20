@@ -1,6 +1,6 @@
 //
 //  Content.swift
-//  ChangingTypeCodable-Example
+//  AmbiguousDecoding-Example
 //
 //  Created by William Boles on 15/01/2023.
 //  Copyright © 2023 Boles. All rights reserved.

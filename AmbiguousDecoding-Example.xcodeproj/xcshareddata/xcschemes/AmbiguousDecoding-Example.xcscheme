@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3DB2E190288C833800FFFF0F"
-               BuildableName = "ChangingTypeCodable_Example.framework"
-               BlueprintName = "ChangingTypeCodable-Example"
-               ReferencedContainer = "container:ChangingTypeCodable-Example.xcodeproj">
+               BuildableName = "AmbiguousDecoding_Example.framework"
+               BlueprintName = "AmbiguousDecoding-Example"
+               ReferencedContainer = "container:AmbiguousDecoding-Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3DB2E198288C833800FFFF0F"
-               BuildableName = "ChangingTypeCodable-ExampleTests.xctest"
-               BlueprintName = "ChangingTypeCodable-ExampleTests"
-               ReferencedContainer = "container:ChangingTypeCodable-Example.xcodeproj">
+               BuildableName = "AmbiguousDecoding-ExampleTests.xctest"
+               BlueprintName = "AmbiguousDecoding-ExampleTests"
+               ReferencedContainer = "container:AmbiguousDecoding-Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3DB2E190288C833800FFFF0F"
-            BuildableName = "ChangingTypeCodable_Example.framework"
-            BlueprintName = "ChangingTypeCodable-Example"
-            ReferencedContainer = "container:ChangingTypeCodable-Example.xcodeproj">
+            BuildableName = "AmbiguousDecoding_Example.framework"
+            BlueprintName = "AmbiguousDecoding-Example"
+            ReferencedContainer = "container:AmbiguousDecoding-Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

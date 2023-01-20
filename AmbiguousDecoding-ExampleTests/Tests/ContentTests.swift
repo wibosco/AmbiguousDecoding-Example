@@ -1,6 +1,6 @@
 //
 //  ContentTests.swift
-//  ChangingTypeCodable-ExampleTests
+//  AmbiguousDecoding-ExampleTests
 //
 //  Created by William Boles on 24/07/2022.
 //  Copyright © 2022 Boles. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import ChangingTypeCodable_Example
+@testable import AmbiguousDecoding_Example
 
 final class ContentTests: XCTestCase {
     var data: Data!
