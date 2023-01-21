@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct Content: Decodable {
+struct Content: Codable, Equatable {
     let media: [Media]
 }
 
-enum Media: Decodable, Equatable {
+enum Media: Codable, Equatable {
     case text(Text)
     case image(Image)
     
@@ -37,14 +37,35 @@ enum Media: Decodable, Equatable {
             fatalError("Unexpected media type encountered")
         }
     }
+    
+    // MARK: - Encode
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        let object: Codable
+        let type: String
+        
+        switch self {
+        case .text(let text):
+            type = "text"
+            object = text
+        case .image(let image):
+            type = "image"
+            object = image
+        }
+        
+        try container.encode(type, forKey: .mediaType)
+        try object.encode(to: encoder)
+    }
 }
 
-struct Text: Decodable, Equatable {
+struct Text: Codable, Equatable {
     let id: Int
     let text: String
 }
 
-struct Image: Decodable, Equatable {
+struct Image: Codable, Equatable {
     let id: Int
     let caption: String
     let url: URL
