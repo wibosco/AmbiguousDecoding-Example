@@ -4,4 +4,4 @@
 [![Twitter](https://img.shields.io/badge/Twitter-@wibosco-blue.svg?style=flat)](https://twitter.com/wibosco)
 
 # InconsistentTypingWithCodable-Example
-A Swift example project on how to `Encodable` and `Decodable` can overcome inconsistencies in the type systems between Swift and JSON - https://williamboles.com/ambiguous-decoding/
+A Swift example project on how `Encodable` and `Decodable` can overcome inconsistencies in the type systems between Swift and JSON - https://williamboles.com/ambiguous-decoding/
